@@ -1,0 +1,30 @@
+body {
+  background-color: #000;
+  color: #ff69b4;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+}
+
+#gameArea {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+  border: 2px solid #ff69b4;
+  overflow: hidden;
+  background: radial-gradient(circle, #111 60%, #000);
+}
+
+#chinchilla {
+  position: absolute;
+  bottom: 10px;
+  left: 180px;
+  width: 60px;
+  filter: drop-shadow(0 0 10px #ff69b4);
+}
+
+.treat {
+  position: absolute;
+  width: 40px;
+  filter: drop-shadow(0 0 10px #fff);
+}
