@@ -4,7 +4,20 @@ body {
   font-family: 'Comic Sans MS', cursive;
   text-align: center;
 }
+.controls {
+  margin-top: 1rem;
+}
 
+.controls button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff69b4;
+}
 #gameArea {
   position: relative;
   width: 400px;
