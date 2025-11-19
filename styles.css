@@ -31,7 +31,8 @@ body {
 #chinchilla {
   position: absolute;
   bottom: 10px;
-  left: 180px;
+  left: 50%; /* start centered */
+  transform: translateX(-50%);
   width: 60px;
   filter: drop-shadow(0 0 10px #ff69b4);
 }
