@@ -50,3 +50,18 @@ function createTreat() {
 
 // Drop treats every 2 seconds
 setInterval(createTreat, 2000);
+const chinchilla = document.getElementById('chinchilla');
+
+function moveChinchilla(direction) {
+  const left = parseInt(chinchilla.style.left || 180);
+  if (direction === 'left' && left > 0) {
+    chinchilla.style.left = (left - 20) + 'px';
+  }
+  if (direction === 'right' && left < (gameArea.offsetWidth - 60)) {
+    chinchilla.style.left = (left + 20) + 'px';
+  }
+}
+
+// Touch buttons
+document.getElementById('leftBtn').addEventListener('click', () => moveChinchilla('left'));
+document.getElementById('rightBtn').addEventListener('click', () => moveChinchilla('right'));
